@@ -674,13 +674,11 @@ function sendAanya() {
 var values;
 var rowcnt=1;
 function loadSheetsApi() {
-	        console.log(rowcnt);
     gapi.client.sheets.spreadsheets.values.get({
         'spreadsheetId': '1Qlbu70-5lk2LzMXawtLIKUl-2paM2oXcznmk1ZCjwnI',
         'range': 'Sheet1!A1:Z',
     }).then(function (response) {
         values = response.result.values;
-        console.log(rowcnt);
         console.log(values);
         console.log(values[1][1]); // displays 'B2'
         document.getElementById("ques").value = values[values.length - rowcnt][0];

@@ -473,8 +473,7 @@ html {
       url = url.replace(/CLICK ME/g, '<b><a href="https://t.me/thenewswords">CLICK ME</a></b>');
       url = url.replace(/Click me/g, '<b><a href="https://t.me/thenewswords">CLICK ME</a></b>');
 
-       keey=document.getElementById("key").value; 
-   if (keey=='00') {
+     keey=document.getElementById("key").value;
       if (crrt != undefined) {
         var oReq = new XMLHttpRequest();
         oReq.open("GET", url, true);
@@ -503,9 +502,6 @@ html {
       }
 
     }); 
-    }else {
-	alert("Get lost");
-	}
   </script>
 
 
@@ -709,23 +705,6 @@ function loadGsheet() {
 // CODE TO GET DATA FROM THE SPREADSHEET ENDS HERE
 
 
-</script>
-
-<script>
-  // Get the input element
-  var input = document.getElementById('userid');
-
-  // Check if the user's ID is stored in localStorage
-  if (localStorage.getItem('userid')) {
-    // If it is, set the value of the input element to the stored ID
-    input.value = localStorage.getItem('userid');
-  }
-
-  // Listen for changes to the input element
-  input.addEventListener('change', function() {
-    // When the user changes the value of the input element, save the new ID to localStorage
-    localStorage.setItem('userid', input.value);
-  });
 </script>
 
 </body>

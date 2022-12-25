@@ -674,6 +674,7 @@ function sendAanya() {
 var values;
 var rowcnt=1;
 function loadSheetsApi() {
+	var rowcnt=1;
     gapi.client.sheets.spreadsheets.values.get({
         'spreadsheetId': '1Qlbu70-5lk2LzMXawtLIKUl-2paM2oXcznmk1ZCjwnI',
         'range': 'Sheet1!A1:Z',

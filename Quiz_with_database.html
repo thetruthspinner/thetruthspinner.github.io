@@ -680,7 +680,7 @@ function loadSheetsApi() {
         'range': 'Sheet1!A1:Z',
     }).then(function (response) {
         values = response.result.values;
-        console.log("rowcnt");
+        console.log(rowcnt);
         console.log(values);
         console.log(values[1][1]); // displays 'B2'
         document.getElementById("ques").value = values[values.length - rowcnt][0];

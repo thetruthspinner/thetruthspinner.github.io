@@ -689,6 +689,7 @@ function loadSheetsApi() {
         document.getElementById("opt3").value = values[values.length - rowcnt][3];
         document.getElementById("opt4").value = values[values.length - rowcnt][4];
         document.getElementById("expla_box").value = values[values.length - rowcnt][5];
+        console.log(rowcnt);
         rowcnt=rowcnt+1; 
     }, function (reason) {
         console.log('Error: ' + reason.result.error.message);

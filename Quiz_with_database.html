@@ -474,7 +474,7 @@ html {
       url = url.replace(/Click me/g, '<b><a href="https://t.me/thenewswords">CLICK ME</a></b>');
 
      keey=document.getElementById("key").value;
-      if (crrt != undefined) {
+      if (crrt != undefined && keey=='00') {
         var oReq = new XMLHttpRequest();
         oReq.open("GET", url, true);
         oReq.send();

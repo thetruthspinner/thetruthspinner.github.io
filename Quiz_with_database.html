@@ -707,6 +707,23 @@ function loadGsheet() {
 
 </script>
 
+<script>
+  // Get the input element
+  var input = document.getElementById('userid');
+
+  // Check if the user's ID is stored in localStorage
+  if (localStorage.getItem('userid')) {
+    // If it is, set the value of the input element to the stored ID
+    input.value = localStorage.getItem('userid');
+  }
+
+  // Listen for changes to the input element
+  input.addEventListener('change', function() {
+    // When the user changes the value of the input element, save the new ID to localStorage
+    localStorage.setItem('userid', input.value);
+  });
+</script>
+
 </body>
 
 </html>

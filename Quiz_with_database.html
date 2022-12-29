@@ -641,9 +641,8 @@ function formSubmit() {
         type: 'post',
         data: jQuery('#my_form').serialize(),
         success: function (result) {
-            jQuery('#msg').html('Thank You');
+            jQuery('#msg').html('Uploaded to Google');
             jQuery('#anyaSend').attr('disabled', false);
-            alert("Uploaded to Google! ");
             //window.location.href='';
         }
     });

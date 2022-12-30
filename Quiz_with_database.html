@@ -489,6 +489,7 @@ html {
           url2 = url2.replace(/Example/g, '<u>Example</u>');
           url2 = url2.replace(/Click me/g, '<b><a href="https://t.me/thenewswords">CLICK ME</a></b>');
           url2 = url2.replace(/CLICK ME/g, '<b><a href="https://t.me/thenewswords">CLICK ME</a></b>');
+          console.log(url2);
           var oReq = new XMLHttpRequest();
           oReq.open("GET", url2, true);
           oReq.send();

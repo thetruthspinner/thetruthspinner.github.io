@@ -457,6 +457,7 @@ html {
   <script>
     document.getElementById("myBtn").addEventListener("click", function (e) {
       e.preventDefault();
+      localStorage.removeItem('formData');
       getValues();
 
 //Quote bot token

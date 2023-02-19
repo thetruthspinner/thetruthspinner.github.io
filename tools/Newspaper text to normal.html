@@ -129,9 +129,13 @@ padding: 2px;
 				.replace(/%C2%A0/g, "+")
 				.replace(/%0A/g, "+")
 				.replace(/-\+/g, "")
+				.replace(/%E2%80%9C/g, "“")
+				.replace(/%E2%80%9D/g, "”")
+				.replace(/%2C/g, ",")
 				.replace(/%E2%80%98|%E2%80%99|%0D/g, "")
 				.replace(/\+/g, " ");
 			let decodedText = decodeURIComponent(manipulatedText);
+		//let decodedText = (manipulatedText);
 			document.getElementById("outputTextarea").value = decodedText;
 		}
 

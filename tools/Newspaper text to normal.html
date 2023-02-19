@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Conversion</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #313C4D;
+	        color:#EEEEEE;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #222831;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			font-size: 28px;
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		label {
+			display: block;
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+			margin-bottom: 20px;
+			resize: vertical;
+			min-height: 100px;
+		}
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.2s ease-in-out;
+			margin-bottom: 20px;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+		.output-container {
+			position: relative;
+			margin-bottom: 20px;
+		}
+		.output-container textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+			resize: vertical;
+			min-height: 100px;
+		}
+		.output-container button {
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			background-color: #fff;
+			border: none;
+			padding: 0;
+			cursor: pointer;
+		}
+		.output-container img {
+			height: 20px;
+		}
+		
+		#clipboardPopup {
+              position: fixed;
+              top: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+              padding: 10px;
+               background-color: rgba(0, 0, 0, 0.8);
+              color: white;
+             border-radius: 5px;
+              visibility: hidden;
+              z-index: 999;
+               transition: visibility 0s, opacity 0.2s linear;
+}
+#copybtn{
+color: black;
+padding: 2px; 
+}
+	</style>
+</head>
+<body>
+	<div id="clipboardPopup">Copied to clipboard!</div>
+
+	<div class="container">
+		<h1>String Conversion</h1>
+		<label for="inputTextarea">Enter Text:</label>
+		<textarea id="inputTextarea" class="textarea"></textarea>
+		<button onclick="convertString()">Convert</button>
+		<div class="output-container">
+			<label for="outputTextarea">Converted Text:</label>
+			<textarea id="outputTextarea" class="textarea"></textarea>
+			<button id="copybtn" onclick="copyToClipboard()">
+				copy
+			</button>
+		</div>
+	</div>
+
+	<script>
+		function convertString() {
+			let inputText = document.getElementById("inputTextarea").value;
+			let encodedText = encodeURIComponent(inputText);
+			let manipulatedText = encodedText
+				.replace(/\+{2}/g, "+")
+				.replace(/%C2%A0/g, "+")
+				.replace(/%0A/g, "+")
+				.replace(/-\+/g, "")
+				.replace(/%E2%80%98|%E2%80%99|%0D/g, "")
+				.replace(/\+/g, " ");
+			let decodedText = decodeURIComponent(manipulatedText);
+			document.getElementById("outputTextarea").value = decodedText;
+		}
+
+		function copyToClipboard() {
+  let output = document.getElementById("outputTextarea");
+  output.select();
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+
+  // show "copied to clipboard" popup
+  let popup = document.getElementById("clipboardPopup");
+  popup.style.visibility = "visible";
+  setTimeout(() => {
+    popup.style.visibility = "hidden";
+  }, 2000);
+}
+
+
+	</script>
+</body>
+</html>

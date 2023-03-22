@@ -15,6 +15,7 @@
 		}
 		.container {
 			max-width: 800px;
+			height:800px;
 			margin: 0 auto;
 			padding: 20px;
 			background-color: #222831;
@@ -63,6 +64,7 @@
 		}
 		.output-container textarea {
 			display: block;
+			margin-top:20px;
 			width: 100%;
 			padding: 10px;
 			border: 2px solid #ccc;
@@ -83,6 +85,11 @@
 		.output-container img {
 			height: 20px;
 		}
+		#outputlabel{
+			display: inline-block;
+			margin-top:20px;
+		
+			}
 		
 		#clipboardPopup {
               position: fixed;
@@ -97,10 +104,30 @@
               z-index: 999;
                transition: visibility 0s, opacity 0.2s linear;
 }
-#copybtn{
-color: black;
-padding: 2px; 
+
+
+.buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#fff;
+  border-color:#0b0e07;
+  border-top-left-radius:9px;
+  border-top-right-radius:9px;
+  border-bottom-left-radius:9px;
+  border-bottom-right-radius:9px;
+  box-shadow:inset 0px -3px 7px 0px #29bbff;
+  text-shadow:inset 0px 1px 0px #263666;
+  background:linear-gradient(#2dabf9, #0688fa);
 }
+
+.buttonClass:hover {
+  background: linear-gradient(#0688fa, #2dabf9);
+}
+              
+              
 	</style>
 </head>
 <body>
@@ -109,13 +136,13 @@ padding: 2px;
 	<div class="container">
 		<h1>String Conversion</h1>
 		<label for="inputTextarea">Enter Text:</label>
-		<textarea id="inputTextarea" class="textarea"></textarea>
+		<textarea id="inputTextarea" class="textarea" oninput="convertString()"></textarea>
 		<button onclick="convertString()">Convert</button>
 		<div class="output-container">
-			<label for="outputTextarea">Converted Text:</label>
+			<label for="outputTextarea" id="outputlabel">Converted Text:</label>
 			<textarea id="outputTextarea" class="textarea"></textarea>
-			<button id="copybtn" onclick="copyToClipboard()">
-				copy
+			<button  class="buttonClass" id="copybtn" onclick="copyToClipboard()">
+				Copy
 			</button>
 		</div>
 	</div>
@@ -132,8 +159,10 @@ padding: 2px;
 				.replace(/%E2%80%9C/g, "“")
 				.replace(/%E2%80%9D/g, "”")
 				.replace(/%2C/g, ",")
+				.replace(/%20/g, "+")
 				.replace(/%E2%80%98|%E2%80%99|%0D/g, "")
-				.replace(/\+/g, " ");
+			   .replace(/\++/g, "+")
+			  .replace(/\+/g, " ");
 			let decodedText = decodeURIComponent(manipulatedText);
 		//let decodedText = (manipulatedText);
 			document.getElementById("outputTextarea").value = decodedText;

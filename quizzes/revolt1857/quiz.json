@@ -55,6 +55,11 @@
         "correctAnswer": "Bihar",
         "explanation": ""
     },
+    {
+        "question": "Deewan Maniram Dutt",
+        "correctAnswer": "Assam",
+        "explanation": ""
+    },
 ],
 "states": ["Allahabad", "Mathura","Meerut","Faizabad","Bareilly","Haryana","Banda","Auwa","Marwar","Lucknow","Kanpur","Bihar","Assam","Jhansi"]
 }

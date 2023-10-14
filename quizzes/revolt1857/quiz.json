@@ -60,6 +60,11 @@
         "correctAnswer": "Assam",
         "explanation": ""
     },
+    {
+        "question": "Maulvi Ahmadullah Shah",
+        "correctAnswer": "Faizabad",
+        "explanation": ""
+    },
 ],
 "states": ["Allahabad", "Mathura","Meerut","Faizabad","Bareilly","Haryana","Banda","Auwa","Marwar","Lucknow","Kanpur","Bihar","Assam","Jhansi"]
 }

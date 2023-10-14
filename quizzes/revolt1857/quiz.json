@@ -30,6 +30,31 @@
         "correctAnswer": "Haryana",
         "explanation": ""
     },
+    {
+        "question": "Nawab Ali Bahadur",
+        "correctAnswer": "Banda",
+        "explanation": ""
+    },
+    {
+        "question": "Lucknow",
+        "correctAnswer": "Begam Hazrat Mahal",
+        "explanation": ""
+    },
+    {
+        "question": "000",
+        "correctAnswer": "Kashmir",
+        "explanation": ""
+    },
+    {
+        "question": "000",
+        "correctAnswer": "Kashmir",
+        "explanation": ""
+    },
+    {
+        "question": "000",
+        "correctAnswer": "Kashmir",
+        "explanation": ""
+    },
 ],
 "states": ["Allahabad", "Mathura","Meerut","Faizabad","Bareilly","Haryana","Banda","Auwa","Marwar","Lucknow","Kanpur","Bihar","Assam","Jhansi"]
 }

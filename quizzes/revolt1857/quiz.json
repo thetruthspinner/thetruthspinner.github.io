@@ -64,6 +64,11 @@
         "question": "Maulvi Ahmadullah Shah",
         "correctAnswer": "Faizabad",
         "explanation": " "
+    },
+    {
+        "question": "Mutiny started in",
+        "correctAnswer": "Meerut",
+        "explanation": "On <b> 10 May 1857 </b>"
     }
 ],
 "states": ["Allahabad","Mathura","Meerut","Faizabad","Bareilly","Haryana","Banda","Auwa","Marwar","Lucknow","Kanpur","Bihar","Assam","Jhansi"]

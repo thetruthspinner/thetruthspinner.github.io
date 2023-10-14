@@ -3,67 +3,67 @@
     {
         "question": "Liyaqat Ali",
         "correctAnswer": "Allahabad",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Devi Singh",
         "correctAnswer": "Mathura",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Kadam Singh",
         "correctAnswer": "Meerut",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Maulvi Mohammed Ullah",
         "correctAnswer": "Faizabad",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Khan Bahadur",
         "correctAnswer": "Bareilly",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Rao Tula Ram",
         "correctAnswer": "Haryana",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Nawab Ali Bahadur",
         "correctAnswer": "Banda",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Begam Hazrat Mahal",
         "correctAnswer": "Lucknow",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Nana Saheb",
         "correctAnswer": "Kanpur",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Tatya Tope",
         "correctAnswer": "Kanpur",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Kunwar Singh",
         "correctAnswer": "Bihar",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Deewan Maniram Dutt",
         "correctAnswer": "Assam",
-        "explanation": ""
+        "explanation": "",
     },
     {
         "question": "Maulvi Ahmadullah Shah",
         "correctAnswer": "Faizabad",
-        "explanation": ""
+        "explanation": "",
     }
 ],
 "states": ["Allahabad", "Mathura","Meerut","Faizabad","Bareilly","Haryana","Banda","Auwa","Marwar","Lucknow","Kanpur","Bihar","Assam","Jhansi"]

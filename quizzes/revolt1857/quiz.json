@@ -69,7 +69,17 @@
         "question": "Mutiny started in",
         "correctAnswer": "Meerut",
         "explanation": "On <b> 10 May 1857 </b>"
+    },
+    {
+        "question": "Thakur Kushal Singh",
+        "correctAnswer": "Auwa",
+        "explanation": "He defeated the joint army of British and Jodhpur."
+    },
+    {
+        "question": "Saadat Ali Khan",
+        "correctAnswer": "Indore",
+        "explanation": "Saadat Ali khan - against british in Indore in 1857"
     }
 ],
-"states": ["Allahabad","Mathura","Meerut","Faizabad","Bareilly","Haryana","Banda","Auwa","Marwar","Lucknow","Kanpur","Bihar","Assam","Jhansi"]
+"states": ["Allahabad","Mathura","Meerut","Faizabad","Bareilly","Haryana","Banda","Auwa","Marwar","Lucknow","Kanpur","Bihar","Assam","Jhansi","Indore"]
 }
